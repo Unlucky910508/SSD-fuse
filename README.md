@@ -1,18 +1,18 @@
-# 📌 ssd_fuse
+#  ssd_fuse
 A FUSE-based SSD file system for efficient write operations and garbage collection
 
-## 📖 Introduction
+## Introduction
 `ssd_fuse` is a **FUSE-based file system** designed for managing NAND flash storage efficiently. It implements custom read/write operations, garbage collection, and wear leveling strategies to **optimize write performance and minimize Write Amplification Factor (WAF)**.
 
 This project is useful for **flash-based storage systems**, embedded devices, and research on file system optimizations.
 
-## 🚀 Features
-- ✔️ **FUSE-based Implementation** – Easily mounts as a user-space file system.
-- ✔️ **Custom Write Algorithm** – Handles both aligned and unaligned writes.
-- ✔️ **Garbage Collection** – Implements basic wear-leveling techniques.
-- ✔️ **Efficient Memory Management** – Reduces excessive writes to enhance SSD lifespan.
+## Features
+-  **FUSE-based Implementation** – Easily mounts as a user-space file system.
+-  **Custom Write Algorithm** – Handles both aligned and unaligned writes.
+-  **Garbage Collection** – Implements basic wear-leveling techniques.
+-  **Efficient Memory Management** – Reduces excessive writes to enhance SSD lifespan.
 
-## 🛠 Installation
+##  Installation
 ### Prerequisites
 Ensure you have the following dependencies installed:
 - **Linux** (Ubuntu recommended)
@@ -26,7 +26,7 @@ sudo apt update
 sudo apt install fuse libfuse-dev build-essential
 ```
 
-## 💻 Build and Run
+## Build and Run
 ### Step 1: Clone the Repository
 ```bash
 git clone https://github.com/Unlucky910508/SSD-fuse.git
@@ -72,13 +72,13 @@ We can get this info by DUT
 • Return physical size (512B unit)
 ```
 
-## 📝 Configuration Options
+## Configuration Options
 You can modify the behavior of the SSD FUSE system by changing parameters in `ssd_fuse.h`:
 - **BLOCK_SIZE** – Default: `512 bytes`
 - **TOTAL_BLOCKS** – Default: `2048`
 - **WEAR_LEVELING_ENABLED** – Enable (`1`) or Disable (`0`) wear leveling
 
-## 📧 Contact
+##  Contact
 For any questions or suggestions, feel free to reach out:
-📩 Email: lucky910508@gmail.com  
-📌 GitHub Issues: [Open an issue](https://github.com/Unlucky910508/SSD-fuse/issues)
+ Email: lucky910508@gmail.com  
+ GitHub Issues: [Open an issue](https://github.com/Unlucky910508/SSD-fuse/issues)
